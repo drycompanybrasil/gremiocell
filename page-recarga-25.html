@@ -1,0 +1,78 @@
+<?php 
+    $page = "Recarga 25";
+    include_once 'templates/global/header.php';
+?>
+
+<section id="produto">
+
+    <div class="headerProduct">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="https://gremiocell.com.br/loja/wp-content/uploads/2020/11/chip.png" alt="">
+                </div>
+                <div class="col-sm-8 d-flex flex-column justify-content-center align-items-center">
+                    <h1>Recarga 25</h1>
+                    <span>1.5 GB + 60 Minutos</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="priceProduct d-flex justify-content-center">
+        <div class="cardPriceProduct d-flex flex-column align-items-center">
+            <div class="row">
+                <h4><span class="pre cliente-cor-texto-primario">Só</span><span class="moeda">R$</span>25,00<span class="tempo">/mes</span></h4>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="d-flex flex-column align-items-center quantidade">
+                        <span>Quantidade</span>
+                        <div class="counter d-flex justify-content-center align-items-center">
+                            <button id="minus">-</button>
+                            <input id="counterNumber" type="number">
+                            <button id="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm d-flex align-items-end">
+                    <a href="javascript:;" class="btncomprar btn-padrao cliente-btn-hover-primario-secundario" id="btnOrderBuy">Comprar Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script>
+
+    // Contador
+    document.getElementById("counterNumber").value = 1;
+    document.getElementById("minus").addEventListener("click",()=>{
+        if(document.getElementById("counterNumber").value >= 2){
+            document.getElementById("counterNumber").value = parseInt(document.getElementById("counterNumber").value) - 1;
+        }
+    })
+    document.getElementById("plus").addEventListener("click",()=>{
+        document.getElementById("counterNumber").value = parseInt(document.getElementById("counterNumber").value) + 1;
+    })
+
+    //Dynamic Button
+    document.getElementById("btnOrderBuy").addEventListener("click",(e)=>{
+        e.preventDefault();
+
+        const url = "https://gremiocell.com.br/loja/?add-to-cart=146207&quantity=";
+        const qtdBundle = document.getElementById('counterNumber').value;
+
+        let tempUrl = url + qtdBundle;
+
+        window.location.href = tempUrl
+    })
+
+</script>
+
+<?php include_once 'templates/home/vantagens.php'; ?>
+<?php include_once 'templates/home/beneficios.php'; ?>
+
+<?php
+    include_once 'templates/global/footer.php';
+?>

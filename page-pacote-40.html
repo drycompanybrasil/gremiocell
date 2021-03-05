@@ -1,0 +1,73 @@
+<?php include 'includes/seo.php'; ?>
+<?php $seo = seo("Pacote 40 - Grêmio Cell", ""); ?>
+<?php include_once 'templates/global/header.php' ?>
+<?php include_once 'templates/home/menu.php' ?>
+
+
+<section class="bloco-produto-wrapper">
+  <div class="container">
+    <div class="bloco-produto">
+      <img src="https://gremiocell.com.br/loja/wp-content/uploads/2020/11/chip.png" alt="Chip Grêmio Cell" title="Chip Grêmio Cell"/>
+      <div class="bloco-produto-wrapper-nome">
+        <h1 class="bloco-produto-titulo">Pacote 40</h1>
+        <small class="bloco-produto-descricao">5Gb de Internet + Ligações Ilimitadas</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloco-produto-wrapper-quantidade">
+  <div class="bloco-produto-wrapper-preco">
+    <strong class="bloco-produto-strong">Só</strong>
+    <small class="bloco-produto-cifra">R$</small>
+    <h2 class="bloco-produto-preco">40,00</h2>
+    <small class="bloco-produto-mes">/mês</small>
+  </div>
+  <div class="bloco-produto-wrapper-botao">
+    <div class="bloco-produto-quantidade-wrapper">
+      <p>Quantidade</p>
+      <div class="bloco-produto-quantidade">
+        <button type="button" id="minus">-</button>
+        <input type="number" id="counterNumber" min="1" value="1">
+        <button type="button" id="plus">+</button>
+      </div>
+    </div>
+    <div class="btn-produto-wrapper">
+      <a href="#" class="btn-comprar" id="btnOrderBuy">Comprar Agora</a>
+    </div>
+  </div>
+</section>
+
+<script>
+
+    // Contador
+    document.getElementById("counterNumber").value = 1;
+    document.getElementById("minus").addEventListener("click",()=>{
+        if(document.getElementById("counterNumber").value >= 2){
+            document.getElementById("counterNumber").value = parseInt(document.getElementById("counterNumber").value) - 1;
+        }
+    })
+    document.getElementById("plus").addEventListener("click",()=>{
+        document.getElementById("counterNumber").value = parseInt(document.getElementById("counterNumber").value) + 1;
+    })
+
+    //Dynamic Button
+    document.getElementById("btnOrderBuy").addEventListener("click",(e)=>{
+        e.preventDefault();
+
+        const url = "https://gremiocell.com.br/loja/?add-to-cart=145374&quantity=";
+        const qtdBundle = document.getElementById('counterNumber').value;
+
+        let tempUrl = url + qtdBundle
+
+        window.location.href = tempUrl
+    })
+
+</script>
+
+<?php include_once 'templates/home/vantagens.php'; ?>
+<?php include_once 'templates/home/beneficios.php'; ?>
+
+<?php
+    include_once 'templates/global/footer.php';
+?>

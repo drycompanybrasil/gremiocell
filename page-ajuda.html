@@ -1,0 +1,16 @@
+<?php include 'includes/seo.php'; ?>
+<?php $seo = seo("Ajuda - Grêmio Cell", ""); ?>
+<?php include_once 'templates/global/header.php' ?>
+<?php include_once 'templates/home/menu.php' ?>
+<!-- HEADER -->
+<section class="bloco-padraos background-padrao-cinza-escuro">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h2 class="bloco-padrao-titulo">Ajuda e perguntas frequentes</h2>
+        </div>
+    </div>
+</section>
+<?= file_get_contents( "https://dryconecta.com.br/inc/views/ajuda.php" ); ?>
+
+<?php
+    include_once 'templates/global/footer.php';

@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    ".well-known": true,
+    "cgi-bin": true,
+    "loja": true,
+  }
+}

@@ -1,0 +1,106 @@
+<?php include 'includes/seo.php'; ?>
+<?php $seo = seo("Onde Recarregar - Grêmio Cell", ""); ?>
+<?php include_once 'templates/global/header.php' ?>
+<?php include_once 'templates/home/menu.php' ?>
+
+
+<section class="bloco-padrao background-preto background-padrao-cinza-escuro cliente-background-quaternario">
+    <div class="container">
+        <div class="flex-column justify-content-center align-items-center text-center">
+            <h2 class="bloco-padrao-titulo">Onde Recarregar</h2>
+        </div>
+    </div>
+</section>
+
+
+<div class="recarregar container">
+    <div class="row justify-content-center align-items-center recarregar-wrapper">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 recarregar-icone">
+            <img src="https://drysteam.com.br/tasks/dist/falamangueira/icon/icon-recarga-app.svg"
+                alt="Faça uma recarga pelo app">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 recarregar-apps">
+            <h3 class="recarregar-titulo">Recarga no APP</h3>
+            <p class="recarregar-conteudo">Você pode recarregar seu chip diretamente pelo seu celular. <br><br>APP
+                <?= $mvno['name']; ?>:</p>
+            <a href="<?= $mvno['apps']['iphone']; ?>" title="Baixe o app <?= $mvno['name']; ?> na Apple Store"
+                target="_blank">
+                <img src="https://drysteam.com.br/tasks/dist/falamangueira/img/op-apple-store.png"
+                    alt="Baixe o app <?= $mvno['name']; ?> na Apple Store"
+                    title="Baixe o app <?= $mvno['name']; ?> na Apple Store">
+            </a>
+            <a href="<?= $mvno['apps']['android']; ?>" title="Baixe o app <?= $mvno['name']; ?> na Google Play"
+                target="_blank">
+                <img src="https://drysteam.com.br/tasks/dist/falamangueira/img/op-google-play.png"
+                    alt="Baixe o app <?= $mvno['name']; ?> na Google Play"
+                    title="Baixe o app <?= $mvno['name']; ?> na Google Play">
+            </a>
+        </div>
+    </div>
+    <div class="row justify-content-center align-items-center recarregar-wrapper">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 order-2">
+            <h3 class="recarregar-titulo">Recarga por ligação ou sms</h3>
+            <p>Você pode recarregar seu chip diretamente pelo seu celular.
+                Ligação.Ligue para *288. Siga as instruções, e pronto!
+                SMS: Mande uma mensagem com a palavra Recarga para 293. Siga as instruções, e pronto!</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 recarregar-icone order-1">
+            <img src="https://drysteam.com.br/tasks/dist/falamangueira/icon/icon-recarga-sms.svg"
+                alt="Faça uma recarga por sms">
+        </div>
+    </div>
+    <div class="row justify-content-center align-items-center recarregar-wrapper">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 recarregar-icone">
+            <img src="https://drysteam.com.br/tasks/dist/falamangueira/icon/icon-recarga-loterica.svg"
+                alt="Faça sua recarga em uma lotérica mais próxima">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <h3 class="recarregar-titulo">Recarga nas casas lotéricas</h3>
+            <p>Agora você pode recarregar seu chip nas casas lotéricas de todo o país.
+                No balcão de atendimento, peça por uma recarga de celular. Solicite ao atendente que selecione na
+                maquininha a
+                opção Surf Telecom / Surf Pay. Escolha o valor da recarga. Informe seu número, e pronto!</p>
+            <p>O pagamento pode ser feito em dinheiro, débito ou crédito.</p>
+        </div>
+    </div>
+    <div class="row justify-content-center align-items-center recarregar-wrapper">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 order-2">
+            <h3 class="recarregar-titulo">Recarga nas maquininhas de cartão</h3>
+            <p>Você pode recarregar também com seu cartão de débito ou crédito por meio das maquininhas de cartão.</p>
+            <ol>
+                <li>Verifique a adquirência da maquininha:</li>
+                <ul>
+                    <li>Cielo</li>
+                    <li>RV e RV GO</li>
+                    <li>REDE Tendência / NZ</li>
+                    <li>REDE Tendência / Group Card</li>
+                </ul>
+                <li>Escolha a opção</li>
+                <ul>
+                    <li>Recarga</li>
+                </ul>
+                <li>Selecione a opção</li>
+                <ul>
+                    <li>Surf Telecom / Surf Pay</li>
+                </ul>
+                <li>Escolha o plano de sua preferência:</li>
+                <ul>
+                    <li><strong>(Pacote 20) - R$ 20</strong></li>
+                    <li><strong>(Pacote 25) - R$ 25</strong></li>
+                    <li><strong>(Pacote 30) - R$ 30</strong></li>
+                    <li><strong>(Pacote 40) - R$ 40</strong></li>
+                    <li><strong>(Pacote 50) - R$ 50</strong></li>
+                    <li><strong>(Pacote 75) - R$ 75</strong></li>
+                </ul>
+            </ol>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 recarregar-icone order-1">
+            <img src="https://drysteam.com.br/tasks/dist/falamangueira/icon/icon-recarga-maquina.svg"
+                alt="Faça sua recarga na maquininha">
+        </div>
+    </div>
+</div>
+
+<?php
+    include_once 'templates/global/footer.php';
+?>

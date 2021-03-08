@@ -1,106 +1,438 @@
-<?php include 'includes/seo.php'; ?>
-<?php $seo = seo("Onde Recarregar - Grêmio Cell", ""); ?>
-<?php include_once 'templates/global/header.php' ?>
-<?php include_once 'templates/home/menu.php' ?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GremioCell - Onde Recarregar</title>
+    <meta http-equiv="Content-Language" content="pt-br" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="description" content="Gremiocell - Onde Recarregar" />
+    <meta name="theme-color" content="#06AEE6" />
+
+    <!-- INC: METAS -->
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+
+    <!-- INC: ROBOTS -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- INC: GOOGLEBOT -->
+    <meta name="googlebot" value="noindex,nofollow" />
+
+    <!-- INC: FAVICONS -->
+    <link rel="shortcut icon" href="https://drysteam.com.br/tasks/dist/gremiocell/favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" sizes="any" href="https://drysteam.com.br/tasks/dist/gremiocell/favicon/favicon.svg" type="image/svg+xml"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://drysteam.com.br/tasks/dist/gremiocell/favicon/favicon.ico/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="https://drysteam.com.br/tasks/dist/gremiocell/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://drysteam.com.br/tasks/dist/gremiocell/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="https://drysteam.com.br/tasks/dist/gremiocell/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://drysteam.com.br/tasks/dist/gremiocell/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="https://drysteam.com.br/tasks/dist/gremiocell/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="https://drysteam.com.br/tasks/dist/gremiocell/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="https://drysteam.com.br/tasks/dist/gremiocell/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://drysteam.com.br/tasks/dist/gremiocell/favicon/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" href="https://drysteam.com.br/tasks/dist/gremiocell/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="https://drysteam.com.br/tasks/dist/gremiocell/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://drysteam.com.br/tasks/dist/gremiocell/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="https://drysteam.com.br/tasks/dist/gremiocell/favicon/android-chrome-192x192.png" sizes="192x192" />
+    <meta name="msapplication-square70x70logo" content="https://drysteam.com.br/tasks/dist/gremiocell/favicon/smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="https://drysteam.com.br/tasks/dist/gremiocell/favicon/mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="https://drysteam.com.br/tasks/dist/gremiocell/favicon/widetile.png" />
+    <meta name="msapplication-square310x310logo" content="https://drysteam.com.br/tasks/dist/gremiocell/favicon/largetile.png" />
+
+    <!-- INC: ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4XJD8ESSZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L4XJD8ESSZ');
+    </script>
+
+    <!-- INC: HOTJAR -->
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2255086,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <!-- INC: JIVOCHAT -->
 
 
-<section class="bloco-padrao background-preto background-padrao-cinza-escuro cliente-background-quaternario">
-    <div class="container">
-        <div class="flex-column justify-content-center align-items-center text-center">
+    <!-- INC: GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- INC: BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"/>
+
+    <!-- INC: FLICKITY -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+
+    <!-- INC: CSS -->
+    <link rel="stylesheet" href="https://drysteam.com.br/tasks/dist/gremiocell/css/style.css?v1=1.0.0" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="fixed-top header-wrap" role="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- MOBILE MENU ICON -->
+            <div class="float-left d-xs-block d-sm-block d-md-block d-lg-none d-xl-none header-mobile-icone-menu">
+              <span aria-label="Menu"></span>
+            </div>
+            <!-- LOGO -->
+            <div class="float-left header-logo">
+              <a href="/">
+                <img src="https://drysteam.com.br/tasks/dist/gremiocell/icon/logo.svg" alt="Logo Grêmio Cell" title="Chip GrêmioCell"/>
+              </a>
+            </div>
+
+            <nav class="float-right header-nav-principal">
+              <ul class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block header-nav-lista">
+                <li class="d-xs-none d-sm-none d-sm-inline-block d-lg-inline-block d-xl-inline-block header-nav-item">
+                  <a href="/nossos-pacotes/" title="Nossos pacotes">Nossos Pacotes</a>
+                </li>
+                <li class="d-xs-none d-sm-none d-sm-none d-lg-none d-xl-inline-block header-nav-item">
+                  <a href="/mapa-de-cobertura/" title=" Mapa de cobertura">Mapa de Cobertura</a>
+                </li>
+                <li class="d-xs-none d-sm-none d-sm-inline-block d-lg-inline-block d-xl-inline-block header-nav-item header-nav-conta">
+                  <div class="d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">
+                    <span class="d-xs-block d-sm-block d-md-block d-lg-block d-xl-block nav-conta-info">Seja Bem-Vindo</span>
+                    <a data-href="/minha-conta/" class="d-xs-block d-sm-block d-md-block d-lg-block d-xl-block nav-conta-link" title="Minha conta">
+                      <strong>Minha Conta</strong>
+                    </a>
+                  </div>
+                  <!-- SUB MENU -->
+                  <ul class="list-unstyled sub-menu sub-menu-conta">
+                    <li><a class="d-inline-block"><small class="d-block sub-menu-label">Meu Chip</small></a></li>
+                    <li><a href="/ativar-chip/" class="d-inline-block" title="Ativar">Ativar Chip</a></li>
+                    <li><a href="/recarga/" class="d-inline-block" title="Faça uma recarga do seu Grêmio Cell">Recarga</a></li>
+                    <li><a href="/portabilidade/" class="d-inline-block" title="Faça a portabilidade para Grêmio Cell">Portabilidade</a></li>
+                    <li><a href="/mapa-de-cobertura/" class="d-inline-block" title="Mapa  de cobertura">Mapa de Cobertura</a></li>
+                    <li><a href="/ajuda/" class="d-inline-block" title="Ajuda">Ajuda</a></li>
+                    <li><a class="d-inline-block"><small class="d-block sub-menu-label">Gerenciar minha Conta</small></a></li>
+                    <li><a href="/minha-conta/" class="d-inline-block" titlte="Minha conta">Minha Conta</a></li>
+                    <li><a href="/meus-pedidos/" class="d-inline-block" title="Meus pedidos">Meus Pedidos</a></li>
+                  </ul>
+                </li>
+                <li class="d-xs-none d-sm-none d-sm-inline-block d-lg-inline-block d-xl-inline-block header-nav-item header-nav-carrinho">
+                  <a href="/carrinho/" class="d-block header-nav-link-carrinho" title="Meu carrinho">
+                    <span class="d-xs-none d-sm-none d-md-none d-lg-none d-xl-none">Carrinho</span>
+                    <span class="d-xs-none d-sm-none d-md-block d-lg-block d-xl-block nav-icone-carrinho">
+                      <small class="nav-carrinho-contagem">0</small>
+                    </span>
+                  </a>
+                </li>
+                <li class="d-xs-none d-sm-none d-sm-inline-block d-lg-inline-block d-xl-inline-block">
+                  <a href="/nossos-pacotes/" class="btnHighlighter" title="Pedir meu chip ">
+                    <svg><rect rx="5"></rect></svg>
+                    <img src="https://drysteam.com.br/tasks/dist/gremiocell/icon/icon-mini-sim.svg"/>Pedir Chip
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SIDEBAR NAV -->
+    <section class="sidebar">
+      <nav>
+        <!--  SIDEBAR HEADER -->
+        <div class="sidebar-header">
+          <!-- SIDEBAR CLOSE -->
+          <div class="sidebar-logo">
+            <img src="https://drysteam.com.br/tasks/dist/gremiocell/icon/logo.svg" alt="Logo GrêmioCell" />
+          </div>
+          <div class="sidebar-close"></div>
+        </div>
+
+        <!-- SIDEBAR LINKS -->
+        <div class="sidebar-itens">
+          <ul class="list-unstyled">
+            <li class="d-flex justify-content-center mb-2">
+              <a href="/nossos-pacotes/" class="sidebarButton btnHighlighter" title="Pedir meu chip "><svg><rect rx="5"></rect></svg>
+              <img src="https://res.cloudinary.com/tidrycompany/image/upload/v1596030413/CDN/icon-mini-sim.svg"/>Pedir Chip</a>
+            </li>
+            <li class="d-flex justify-content-center mb-2">
+              <a href="/recarga/" class="sidebarButton btnOutline" title="Pedir meu chip ">
+              <img src="https://drysteam.com.br/tasks/dist/---/icon/icon-mini-sim.svg"/>Recarregar</a>
+            </li>
+            <div class="mb-2">
+              <li><a class="mb-0"><small class="d-block sub-menu-label"></small></a></li>
+              <li><a href="/nossos-pacotes/" title="Nossos pacotes">Nossos Pacotes</a></li>
+            </div>
+            <div class="servicos mb-2">
+              <li><a class="mb-0 d-inline-block"><small class="d-block sub-menu-label">Serviços</small></a></li>
+              <li><a href="/ativar-chip/" title="Ativar meu chip Grêmio Cell">Ativar Chip</a></li>
+              <li><a href="/portabilidade/" title="Faça a portabilidade para Grêmio Cell">Portabilidade</a></li>
+              <li><a href="/mapa-de-cobertura/" title="Mapa de Cobertura do Grêmio Cell">Mapa de Cobertura</a></li>
+              <li><a href="/configure-sua-internet/" title="Configure sua internert">Configure sua Internet</a></li>
+            </div>
+            <div class="minha-conta mb-4">
+              <li><a class="mb-0 d-inline-block"><small class="d-block sub-menu-label">Minha Conta</small></a></li>
+              <li><a href="/app/" title="App">App</a></li>
+              <li><a href="/minha-conta/" class="d-inline-block" title="Minha conta">Minha Conta</a></li>
+              <li><a href="/meus-pedidos/" title="Meus pedidos">Meus Pedidos</a></li>
+            </div>
+          </ul>
+          <ul class="list-unstyled">
+            <li class="pt-3 central-de-atendimento">
+              <small><strong>Central de Atendimento 24Hs</strong><br />
+              Ligue do seu  para *288 ou 10543 de qualquer outra operadora.</small>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+		<!-- MAIN -->
+    <main>
+
+      <!-- PADRÃO -->
+      <section class="bloco-padrao">
+        <div class="container">
+          <div class="row justify-content-center">
             <h2 class="bloco-padrao-titulo">Onde Recarregar</h2>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
-
-<div class="recarregar container">
-    <div class="row justify-content-center align-items-center recarregar-wrapper">
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 recarregar-icone">
-            <img src="https://drysteam.com.br/tasks/dist/falamangueira/icon/icon-recarga-app.svg"
-                alt="Faça uma recarga pelo app">
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 recarregar-apps">
+      <!-- ONDE RECARREGAR -->
+      <section class="recarregar">
+        <div class="row justify-content-center align-items-center recarregar-wrapper">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 recarregar-icone">
+            <img src="https://drysteam.com.br/tasks/dist/gremiocell/icon/icon-recarga-app.svg" alt="Faça uma recarga pelo app">
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 recarregar-apps">
             <h3 class="recarregar-titulo">Recarga no APP</h3>
-            <p class="recarregar-conteudo">Você pode recarregar seu chip diretamente pelo seu celular. <br><br>APP
-                <?= $mvno['name']; ?>:</p>
-            <a href="<?= $mvno['apps']['iphone']; ?>" title="Baixe o app <?= $mvno['name']; ?> na Apple Store"
-                target="_blank">
-                <img src="https://drysteam.com.br/tasks/dist/falamangueira/img/op-apple-store.png"
-                    alt="Baixe o app <?= $mvno['name']; ?> na Apple Store"
-                    title="Baixe o app <?= $mvno['name']; ?> na Apple Store">
+            <p class="recarregar-conteudo">Você pode recarregar seu chip diretamente pelo seu celular. <br><br>APP Grêmio Cell:</p>
+            <a href="#" title="Baixe o app Grêmio Cell na Apple Store" target="_blank">
+              <img src="https://drysteam.com.br/tasks/dist/libs/img/op-apple-store.png" alt="Baixe o app Grêmio Cell na Apple Store" title="Baixe o app Grêmio Cell na Apple Store">
             </a>
-            <a href="<?= $mvno['apps']['android']; ?>" title="Baixe o app <?= $mvno['name']; ?> na Google Play"
-                target="_blank">
-                <img src="https://drysteam.com.br/tasks/dist/falamangueira/img/op-google-play.png"
-                    alt="Baixe o app <?= $mvno['name']; ?> na Google Play"
-                    title="Baixe o app <?= $mvno['name']; ?> na Google Play">
+            <a href="#" title="Baixe o appGrêmio Cell na Google Play" target="_blank">
+              <img src="https://drysteam.com.br/tasks/dist/libs/img/op-google-play.png" alt="Baixe o app Grêmio Cell na Google Play" title="Baixe o app Grêmio Cell na Google Play">
             </a>
+          </div>
         </div>
-    </div>
-    <div class="row justify-content-center align-items-center recarregar-wrapper">
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 order-2">
-            <h3 class="recarregar-titulo">Recarga por ligação ou sms</h3>
-            <p>Você pode recarregar seu chip diretamente pelo seu celular.
-                Ligação.Ligue para *288. Siga as instruções, e pronto!
-                SMS: Mande uma mensagem com a palavra Recarga para 293. Siga as instruções, e pronto!</p>
+        <div class="row justify-content-center align-items-center recarregar-wrapper">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 order-2">
+            <h3 class="recarregar-titulo">Recarga por sms</h3>
+            <strong>SMS:</strong> Mande uma mensagem com a palavra Recarga para 293. Siga as instruções, e pronto!</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 recarregar-icone order-1">
+            <img src="https://drysteam.com.br/tasks/dist/gremiocell/icon/icon-recarga-sms.svg" alt="Faça uma recarga por sms">
+          </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 recarregar-icone order-1">
-            <img src="https://drysteam.com.br/tasks/dist/falamangueira/icon/icon-recarga-sms.svg"
-                alt="Faça uma recarga por sms">
-        </div>
-    </div>
-    <div class="row justify-content-center align-items-center recarregar-wrapper">
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 recarregar-icone">
-            <img src="https://drysteam.com.br/tasks/dist/falamangueira/icon/icon-recarga-loterica.svg"
-                alt="Faça sua recarga em uma lotérica mais próxima">
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="row justify-content-center align-items-center recarregar-wrapper">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 recarregar-icone">
+            <img src="https://drysteam.com.br/tasks/dist/gremiocell/icon/icon-recarga-loterica.svg" alt="Faça sua recarga em uma lotérica mais próxima">
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <h3 class="recarregar-titulo">Recarga nas casas lotéricas</h3>
             <p>Agora você pode recarregar seu chip nas casas lotéricas de todo o país.
-                No balcão de atendimento, peça por uma recarga de celular. Solicite ao atendente que selecione na
-                maquininha a
-                opção Surf Telecom / Surf Pay. Escolha o valor da recarga. Informe seu número, e pronto!</p>
-            <p>O pagamento pode ser feito em dinheiro, débito ou crédito.</p>
+            No balcão de atendimento, peça por uma recarga de celular. Solicite ao atendente que selecione na maquininha a opção Surf Telecom / Surf Pay. Escolha o valor da recarga. Informe seu número, e pronto!</p>
+          <p>O pagamento pode ser feito em dinheiro, débito ou crédito.</p>
+          </div>
         </div>
-    </div>
-    <div class="row justify-content-center align-items-center recarregar-wrapper">
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 order-2">
+        <div class="row justify-content-center align-items-center recarregar-wrapper">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 order-2">
             <h3 class="recarregar-titulo">Recarga nas maquininhas de cartão</h3>
             <p>Você pode recarregar também com seu cartão de débito ou crédito por meio das maquininhas de cartão.</p>
             <ol>
-                <li>Verifique a adquirência da maquininha:</li>
-                <ul>
-                    <li>Cielo</li>
-                    <li>RV e RV GO</li>
-                    <li>REDE Tendência / NZ</li>
-                    <li>REDE Tendência / Group Card</li>
-                </ul>
-                <li>Escolha a opção</li>
-                <ul>
-                    <li>Recarga</li>
-                </ul>
-                <li>Selecione a opção</li>
-                <ul>
-                    <li>Surf Telecom / Surf Pay</li>
-                </ul>
-                <li>Escolha o plano de sua preferência:</li>
-                <ul>
-                    <li><strong>(Pacote 20) - R$ 20</strong></li>
-                    <li><strong>(Pacote 25) - R$ 25</strong></li>
-                    <li><strong>(Pacote 30) - R$ 30</strong></li>
-                    <li><strong>(Pacote 40) - R$ 40</strong></li>
-                    <li><strong>(Pacote 50) - R$ 50</strong></li>
-                    <li><strong>(Pacote 75) - R$ 75</strong></li>
-                </ul>
+              <li>Verifique a adquirência da maquininha:</li>
+              <ul>
+                <li>Cielo</li>
+                <li>RV e RV GO</li>
+                <li>REDE Tendência / NZ</li>
+                <li>REDE Tendência / Group Card</li>
+              </ul>
+              <li>Escolha a opção</li>
+              <ul><li>Recarga</li></ul>
+              <li>Selecione a opção</li>
+              <ul><li>Surf Telecom / Surf Pay</li></ul>
+              <li>Escolha o plano de sua preferência:</li>
+              <ul>
+                <li><strong>(Pacote 20) - R$ 20</strong></li>
+                <li><strong>(Pacote 25) - R$ 25</strong></li>
+                <li><strong>(Pacote 30) - R$ 30</strong></li>
+                <li><strong>(Pacote 40) - R$ 40</strong></li>
+                <li><strong>(Pacote 50) - R$ 50</strong></li>
+                <li><strong>(Pacote 75) - R$ 75</strong></li>
+              </ul>
             </ol>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 recarregar-icone order-1">
+            <img src="https://drysteam.com.br/tasks/dist/gremiocell/icon/icon-recarga-maquina.svg" alt="Faça sua recarga na maquininha">
+          </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 recarregar-icone order-1">
-            <img src="https://drysteam.com.br/tasks/dist/falamangueira/icon/icon-recarga-maquina.svg"
-                alt="Faça sua recarga na maquininha">
-        </div>
-    </div>
-</div>
+      </section>
 
-<?php
-    include_once 'templates/global/footer.php';
-?>
+    </main>
+
+		<!-- FOOTER -->
+    <footer class="footer-wrap">
+      <div class="container">
+        <div class="footer-logo">
+          <a href="/"><img src="http://drysteam.com.br/tasks/dist/gremiocell/icon/logo.svg" alt="Logo GremioCell" title="Logo GremioCell"></a>
+        </div>
+        <div class="footer-coluna-wrap">
+          <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+              <h3 class="footer-subtitulo">Para Você</h3>
+              <ul>
+                <li><a href="/nossos-pacotes/" title="Pedir seu ">Pedir Chip</a></li>
+                <li><a href="/recarga/" title="Faça uma recarga do seu ">Faça uma Recarga</a></li>
+                <li><a href="/nossos-pacotes/" title="Nossos Pacotes ">Nossos Pacotes</a></li>
+                <li><a href="/contato/" title="Contato">Contato</a></li>
+                <li><a href="/ajuda/" title="Ajuda">Ajuda</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+              <h3 class="footer-subtitulo invisible d-sm-none d-md-block">Para Você</h3>
+              <ul>
+                <li><a href="/app/" title="Faça uma recarga do seu ">APP</a></li>
+                <li><a href="/minha-conta/" title="Acesse sua conta">Minha Conta</a></li>
+                <li><a href="/meus-pedidos/" title="Nossos Pacotes ">Meus Pedidos</a></li>
+                <li><a href="/termos-de-adesao/" title="Termos de adesão ">Termos de Adesão</a></li>
+                <li><a href="/politica-de-privacidade/" title="Política de privacidade ">Política de Privacidade</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+              <h3 class="footer-subtitulo">Serviços</h3>
+              <ul>
+                <li><a href="/ativar-chip/" title="Ativar Chip">Ativar Chip</a></li>
+                <li><a href="/portabilidade/" title="Faça portabilidade para ">Portabilidade</a></li>
+                <li><a href="/mapa-de-cobertura/" title="Mapa de cobertura">Mapa de Cobertura</a></li>
+                <li><a href="/configure-sua-internet/" title="Configure sua internet">Configure sua Internet</a></li>
+                <li><a href="/pontos-de-venda/" title="Confira os pontos de venda ">Pontos de Venda</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 linksFooter">
+							<h3 class="footer-subtitulo">Baixe Nosso App</h3>
+							<div class="d-flex align-items-center">
+								<div class="footer-app">
+									<a href="#" target="_blank">
+										<img src="https://drysteam.com.br/tasks/dist/libs/img/op-apple-store.png"
+										title="Baixe o app  na Apple Store" alt="Baixe o app  na Apple Store">
+									</a>
+								</div>
+								<div class="footer-app">
+									<a href="#" target="_blank">
+										<img src="https://drysteam.com.br/tasks/dist/libs/img/op-google-play.png"
+										title="Baixe o app  no Google Play" alt="Baixe o app  no Google Play">
+									</a>
+								</div>
+							</div>
+							<h3 class="footer-subtitulo">Siga-nos</h3>
+							<div class="footer-redes-sociais">
+								<a href="https://www.instagram.com/" class="footer-instagram" target="_blank">
+									<img src="https://drysteam.com.br/tasks/dist/libs/icons/icon-instagram.svg" title="Confira o  no Instagram"
+									alt="Confira o  no Instagram">
+								</a>
+								<a href="https://www.facebook.com/" class="footer-facebook" target="_blank">
+									<img src="https://drysteam.com.br/tasks/dist/libs/icons/icon-facebook.svg" title="Confira o  no Facebook"
+									alt="Confira o  no Facebook">
+								</a>
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 footer-mvno">
+        <h2 class="footer-titulo"> é <span>41</span></h2>
+        <p class="footer-codigo">Utilize o código da operadora 41 em suas ligações interurbanas.</p>
+        <p class="footer-telefone">Ex: 0 + 41 + DDD + número de telefone</p>
+      </div>
+      <div class="container footer-atendimento">
+        <h2 class="footer-atendimento-titulo">Telefones Úteis</h2>
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <h3 class="footer-atendimento-subtitulo">Número </h3>
+            <p class="footer-atendimento-descricao">Ligue para <strong>*221#</strong> para saber seu <br>número </p>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <h3 class="footer-atendimento-subtitulo">Atendimento 24 <span class="text-lowercase">h</span></h3>
+            <p class="footer-atendimento-descricao">Ligue para <strong>*288</strong> ou <strong>10543</strong> para falar com a central de atendimento</p>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <h3 class="footer-atendimento-subtitulo">Consultar Saldo</h3>
+            <p class="footer-atendimento-descricao">Ligue para <strong>*225#</strong> para saber seu saldo de dados e validade de seu pacote</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row align-items-center footer-pagamento">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <span class="footer-pagamento-titulo">Formas de pagamento</span>
+            <img src="https://drysteam.com.br/tasks/dist/libs/img/op-formas-de-pagamento.png" class="footer-pagamento-imagem" title="Formas de pagamento">
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <p class="footer-razao-social">
+              <strong>2021 </strong><br>
+              CNPJ: 15.564.295/0001-04<br>
+              RAZÃO SOCIAL: DRY COMPANY DO BRASIL TECNOLOGIA LTDA<br>
+              Av Anápolis, N° 510 - Vila Nilva - BARUERI/SP - CEP 06404-250
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CONSENTIMENTO -->
+    <div class="consentimento">
+      <div class="consentimento-container">
+        <div class="consentimento-preferencias">
+          <p class="consentimento-preferencias-header">
+            Saiba mais sobre os cookies no link <a href="/politica-de-privacidade/" class="consentimento-link">política de privacidade</a>
+          </p>
+          <ul class="consentimento-lista">
+            <li class="consentimento-item">
+              <button class="consentimento-toggle" disabled="disabled" role="switch" aria-checked="true" title=""></button>
+              <span alt="">Funcionalidades Essênciais</span>
+            </li>
+            <li class="consentimento-item">
+              <button class="consentimento-toggle" role="switch" aria-checked="true" title=""></button>
+              <span alt="">Análise de Uso do Site</span>
+            </li>
+          </ul>
+        </div>
+        <div class="consentimento-info">
+          <p>Este site utiliza cookies para funcionalidades essenciais.</p>
+          <div class="consentimento-buttons">
+            <button id="personalizar" class="consentimento-personalizar">Personalizar</button>
+            <button id="salvar" class="consentimento-salvar">Continuar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox"></div>
+
+    <!-- INC: BOOTSTRAP -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- INC: FLICKITY -->
+    <script src="https://drysteam.com.br/tasks/dist/libs/js/flickity.pkgd.min.js"></script>
+
+    <!-- INC: JS MAIN -->
+    <script src="https://drysteam.com.br/tasks/dist/gremiocell/js/main.js?v1=1.0.0"></script>
+  </body>
+</html>
